@@ -1,0 +1,27 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    vector<int>v;
+    int n; cin >> n;
+    while(n--){
+        int x; cin >> x;
+        v.push_back(x);
+    }
+    int a,b;
+    cin >> a; a--;
+    v.erase(v.begin() + a);
+    cin >> a >> b; a--; b--;
+    v.erase(v.begin() + a, v.begin() + b);
+    cout<<v.size()<<endl;
+    for(auto& it : v)
+        cout << it << ' ';
+    
+    
+    return 0;
+}
