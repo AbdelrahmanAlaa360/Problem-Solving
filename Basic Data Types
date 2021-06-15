@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cstdio>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    
+    int x; cin >> x;
+    long long y; cin >> y;
+    char ch; cin >> ch;
+    float f; cin >> f;
+    double d; cin >> d;
+    cout << x << endl << y << endl << ch << endl ;
+    cout << fixed << setprecision (3) << f << endl;
+    cout << fixed << setprecision (9) << d;
+    
+    return 0;
+}
