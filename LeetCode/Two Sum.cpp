@@ -30,7 +30,7 @@ public:
                 ans.push_back(i);
             else if(copyVect[i] == nums[p2])
                 ans.push_back(i);
-        }
+        } 
         return ans;
     }
 };
